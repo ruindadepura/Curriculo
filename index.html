@@ -1,204 +1,177 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Victor Rivera - Desenvolvedor Júnior</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">
-                <h1>Victor Nunes Rivera</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Rivera - Desenvolvedor Júnior</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- Cursor customizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Background animado -->
+    <div class="animated-bg"></div>
+    
+    <!-- Partículas -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" onclick="scrollToContent()"></div>
+
+    <!-- Container principal -->
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 data-text="Victor Rivera">Victor Rivera</h1>
                 <h2>Desenvolvedor Júnior</h2>
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <a href="mailto:victor.punch1000@gmail.com?subject=Contato%20via%20Portfolio&body=Olá%20Victor,%20vim%20pelo%20seu%20portfolio..." class="contact-item" title="Enviar email">
                         <span>📧</span>
                         <span>victor.punch1000@gmail.com</span>
-                    <div class="contact-item">
+                    </a>
+                    <a href="https://wa.me/5579998621451?text=Olá%20Victor,%20vim%20pelo%20seu%20portfolio!" class="contact-item" title="Enviar mensagem no WhatsApp" target="_blank">
                         <span>📱</span>
                         <span>(79) 99862-1451</span>
-                    <div class="contact-item">
+                    </a>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Aracaju,SE,Brasil" class="contact-item" title="Ver no Google Maps" target="_blank">
                         <span>📍</span>
                         <span>Aracaju-SE</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Objetivo -->
+        <section class="section">
+            <h3 class="section-title">Objetivo Profissional</h3>
+            <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.9;">
+                Desenvolvedor Júnior apaixonado por tecnologia, buscando oportunidade para aplicar conhecimentos em desenvolvimento web full-stack e contribuir para projetos inovadores. Tenho experiência prática com tecnologias modernas como Java, JavaScript, Python e React, além de conhecimento em metodologias ágeis. Estou em busca de um ambiente colaborativo onde possa crescer profissionalmente e agregar valor à equipe.
+            </p>
+        </section>
+
+        <!-- Competências -->
+        <section class="section">
+            <h3 class="section-title">Competências Técnicas</h3>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Linguagens de Programação</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Backend</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Node.js (Básico)</span>
+                        <span class="skill-tag">Spring Boot</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Banco de Dados</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">MySQL (Básico)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h4>Ferramentas & Metodologias</h4>
+                    <div class="skills-list">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Scrum</span>
+                        <span class="skill-tag">Metodologias Ágeis</span>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="content">
-                <div class="section">
-                    <h3 class="section-title">Objetivo Profissional</h3>
-                    <p class="objective">
-                        Desenvolvedor Júnior apaixonado por tecnologia, buscando
-                        oportunidade para aplicar conhecimentos em
-                        desenvolvimento web full-stack e contribuir para
-                        projetos inovadores. Tenho experiência prática com
-                        tecnologias modernas como Java, JavaScript, Python e
-                        React, além de conhecimento em metodologias ágeis. Estou
-                        em busca de um ambiente colaborativo onde possa crescer
-                        profissionalmente e agregar valor à equipe.
-                    </p>
-                </div>
-
-                <div class="section">
-                    <h3 class="section-title">Competências Técnicas</h3>
-                    <div class="skills-container">
-                        <div class="skill-category">
-                            <h4>Linguagens de Programação</h4>
-                            <div class="skills-list">
-                                <span class="skill-tag">Java</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Python</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <h4>Frontend</h4>
-                            <div class="skills-list">
-                                <span class="skill-tag">HTML5</span>
-                                <span class="skill-tag">CSS3</span>
-                                <span class="skill-tag">React</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <h4>Backend</h4>
-                            <div class="skills-list">
-                                <span class="skill-tag">Node.js (Básico)</span>
-                                <span class="skill-tag">Spring Boot</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <h4>Banco de Dados</h4>
-                            <div class="skills-list">
-                                <span class="skill-tag">MySQL (Básico)</span>
-                            </div>
-                        </div>
-
-                        <div class="skill-category">
-                            <h4>Ferramentas & Metodologias</h4>
-                            <div class="skills-list">
-                                <span class="skill-tag">Git/GitHub</span>
-                                <span class="skill-tag">Scrum</span>
-                                <span class="skill-tag">Metodologias
-                                    Ágeis</span>
-                            </div>
-                        </div>
+        <!-- Projetos -->
+        <section class="section">
+            <h3 class="section-title">Projetos Destacados</h3>
+            <div class="projects">
+                <div class="project-item">
+                    <div class="project-title">Sistema de Gerenciamento de Tarefas</div>
+                    <div class="project-tech">Java • Spring Boot • MySQL • React</div>
+                    <div class="description">
+                        Aplicação web full-stack para gerenciamento de tarefas com autenticação de usuários, CRUD completo e interface responsiva. Implementação de API REST e integração com banco de dados MySQL.
                     </div>
                 </div>
 
-                <div class="section">
-                    <h3 class="section-title">Projetos Destacados</h3>
-                    <div class="projects">
-                        <div class="project-item">
-                            <div class="project-title">Sistema de Gerenciamento
-                                de Tarefas</div>
-                            <div class="project-tech">Java • Spring Boot • MySQL
-                                • React</div>
-                            <div class="description">
-                                Aplicação web full-stack para gerenciamento de
-                                tarefas com autenticação de usuários, CRUD
-                                completo e interface responsiva. Implementação
-                                de API REST e integração com banco de dados
-                                MySQL.
-                            </div>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="project-title">Landing Page
-                                Responsiva</div>
-                            <div class="project-tech">HTML5 • CSS3 • JavaScript
-                                • React</div>
-                            <div class="description">
-                                Desenvolvimento de landing page moderna e
-                                responsiva utilizando React, com design
-                                mobile-first e otimização para diferentes
-                                dispositivos. Implementação de componentes
-                                reutilizáveis e boas práticas de UX/UI.
-                            </div>
-                        </div>
-
-                        <div class="project-item">
-                            <div class="project-title">API de Controle de
-                                Estoque</div>
-                            <div class="project-tech">Python • Node.js •
-                                MySQL</div>
-                            <div class="description">
-                                API RESTful para controle de estoque com
-                                endpoints para cadastro, consulta e atualização
-                                de produtos. Implementação de validações e
-                                tratamento de erros, com versionamento no
-                                GitHub.
-                            </div>
-                        </div>
+                <div class="project-item">
+                    <div class="project-title">Landing Page Responsiva</div>
+                    <div class="project-tech">HTML5 • CSS3 • JavaScript • React</div>
+                    <div class="description">
+                        Desenvolvimento de landing page moderna e responsiva utilizando React, com design mobile-first e otimização para diferentes dispositivos. Implementação de componentes reutilizáveis e boas práticas de UX/UI.
                     </div>
                 </div>
 
-                <div class="section">
-                    <h3 class="section-title">Experiência Profissional - 1 </h3>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div>
-                                <div class="job-title">Desenvolvedor Front-End
-                                    (Residência de Software)</div>
-                                <div class="company">Jetsalles</div>
-                            </div>
-                            <div class="date">2024 </div>
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>Durante a disciplina de Residência em
-                                    Software, participei ativamente da criação
-                                    de um CRM customizado para o site da
-                                    Jetsalles, empregando React em conjunto com
-                                    a biblioteca shadcn/ui para a interface.
-                                    Além disso, fui responsável pela
-                                    implementação da integração com a API da RD
-                                    Station para gestão de relacionamento com
-                                    clientes.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <h3 class="section-title">Experiência Profissional - 2</h3>
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <div>
-                                <div class="job-title">Desenvolvedor Back-End
-                                    (Residência de
-                                    Software)</div>
-                                <div class="company">Fundação de Saúde Parreiras Horta (FSPH)</div>
-                            </div>
-                            <div class="date"> 2025 </div>
-                        </div>
-                        <div class="description">
-                            <ul>
-                                <li>Atuei na criação de uma API robusta para o gerenciamento de registros de amostras biológicas.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section">
-                    <h3 class="section-title">Formação Acadêmica</h3>
-                    <div class="education-item">
-                        <div class="experience-header">
-                            <div>
-                                <div class="job-title">Ciências Da Computação </div>
-                                <div class="company">Universidade Tiradentes (UNIT)</div>
-                            </div>
-                            <div class="date">2024 - 2029</div>
-                        </div>
-                        <div class="description">
-                            Cursando 3º semestre. Principais disciplinas:
-                            Estrutura de Dados, Laboratório de Redes de COmputadores, Projeto de Programção, Banco de Dados, Cálculo Númerico, Engenharia e Modelagem de Software.</div>
-                    </div>
-                </div>
-                        </div>
+                <div class="project-item">
+                    <div class="project-title">API de Controle de Estoque</div>
+                    <div class="project-tech">Python • Node.js • MySQL</div>
+                    <div class="description">
+                        API RESTful para controle de estoque com endpoints para cadastro, consulta e atualização de produtos. Implementação de validações e tratamento de erros, com versionamento no GitHub.
                     </div>
                 </div>
             </div>
-    </body>
+        </section>
+
+        <!-- Experiência -->
+        <section class="section">
+            <h3 class="section-title">Experiência Profissional</h3>
+            
+            <div class="experience-item">
+                <div class="job-title">Desenvolvedor Front-End (Residência de Software)</div>
+                <div class="company">Jetsalles</div>
+                <div class="date">2024</div>
+                <div class="description" style="margin-top: 20px;">
+                    Durante a disciplina de Residência em Software, participei ativamente da criação de um CRM customizado para o site da Jetsalles, empregando React em conjunto com a biblioteca shadcn/ui para a interface. Além disso, fui responsável pela implementação da integração com a API da RD Station para gestão de relacionamento com clientes.
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="job-title">Desenvolvedor Back-End (Residência de Software)</div>
+                <div class="company">Fundação de Saúde Parreiras Horta (FSPH)</div>
+                <div class="date">2025</div>
+                <div class="description" style="margin-top: 20px;">
+                    Atuei na criação de uma API robusta para o gerenciamento de registros de amostras biológicas.
+                </div>
+            </div>
+        </section>
+
+        <!-- Formação -->
+        <section class="section">
+            <h3 class="section-title">Formação Acadêmica</h3>
+            <div class="education-item">
+                <div class="job-title">Ciências da Computação</div>
+                <div class="company">Universidade Tiradentes (UNIT)</div>
+                <div class="date">2024 - 2029</div>
+                <div class="description" style="margin-top: 20px;">
+                    Cursando 3º semestre. Principais disciplinas: Estrutura de Dados, Laboratório de Redes de Computadores, Projeto de Programação, Banco de Dados, Cálculo Numérico, Engenharia e Modelagem de Software.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
